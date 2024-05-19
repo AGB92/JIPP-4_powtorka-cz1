@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrukcje sterujące i pętle", "Instrukcje sterujące i pętle.csproj", "{A74B3717-82E6-43E8-B137-3F51D85210EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A74B3717-82E6-43E8-B137-3F51D85210EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A74B3717-82E6-43E8-B137-3F51D85210EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A74B3717-82E6-43E8-B137-3F51D85210EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A74B3717-82E6-43E8-B137-3F51D85210EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D8123FA-FD31-40F2-B29A-1D40AF2FDC51}
+	EndGlobalSection
+EndGlobal
