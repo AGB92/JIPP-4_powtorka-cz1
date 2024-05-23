@@ -30,4 +30,33 @@ namespace Library.Domain
             return $"Title: {Title} Author: {Author} ProductsAvailable: {ProductsAvailable}";
         }
     }
+    public class BookOrdered
+    {
+        public int BookID { get; set; }
+        public int NumerOrdered { get; set; }
+    }
+    public class Order
+    {
+        DateTime Date { get; set; }
+        List<BookOrdered> BooksOrderedList { get; set; }
+        public Order() 
+        { 
+            Date=DateTime.Now;
+            BooksOrderedList = new List<BookOrdered>();
+        }
+        public override string ToString()
+        {
+            string str1="";
+            string str2 = "";
+
+            str1 = $"Order: {Convert.ToString(Date)}";
+
+            foreach (BookOrdered ksiazka in BooksOrderedList)
+            {
+                str1 +=$"\nBook: {Convert.ToString(ksiazka.BookID)} Count: {Convert.ToString(ksiazka.NumerOrdered)}";
+            }
+
+            return str1+str2;
+        }
+    }
 }
