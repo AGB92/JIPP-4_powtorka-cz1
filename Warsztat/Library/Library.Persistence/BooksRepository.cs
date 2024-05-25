@@ -9,12 +9,12 @@ namespace Library.Persistence
 {
     public class BooksRepository
     {
-        private readonly List<Book> _database=new List<Book>();
-        public BooksRepository() 
+        private readonly List<Book> _database = new List<Book>();
+        public BooksRepository()
         {
-            Book b1=new Book("Stary człowiek i morze", "Ernest Hemingway", 1986, "AAAA", 10, 19.99m);
-            Book b2=new Book("Komu bije dzwon", "Ernest Hemingway", 1997, "BBBB", 0, 119.99m);
-            Book b3=new Book("Alicja w krainie czarów", "C.K. Lewis", 1998, "CCCC", 53, 39.99m);
+            Book b1 = new Book("Stary człowiek i morze", "Ernest Hemingway", 1986, "AAAA", 10, 19.99m);
+            Book b2 = new Book("Komu bije dzwon", "Ernest Hemingway", 1997, "BBBB", 0, 119.99m);
+            Book b3 = new Book("Alicja w krainie czarów", "C.K. Lewis", 1998, "CCCC", 53, 39.99m);
             Book b4 = new Book("Opowieści z Narnii", "C.K. Lewis", 1999, "DDDD", 33, 49.99m);
             Book b5 = new Book("Harry Potter", "J.K. Rowling", 2000, "EEEE", 23, 69.99m);
             Book b6 = new Book("Paragraf 22", "Joseph Heller", 2001, "FFFF", 5, 45.99m);
@@ -33,29 +33,20 @@ namespace Library.Persistence
             _database.Add(b9);
             _database.Add(b10);
         }
-
         public void Insert(Book book)
-        {
-            _database.Add(book);
-        }
+        { _database.Add(book); }
         public List<Book> GetAll()
-        {
-            return _database;
-        }
+        { return _database; }
         public void RemoveByTitle(string title)
         {
             Book BookToRemove = _database.First(x => x.Title == title);
             _database.Remove(BookToRemove);
         }
-
-
         public void ChangeState(string title, int StateChange)
         {
             Book BookToChange = _database.First(x => x.Title == title);
             BookToChange.ProductsAvailable += StateChange;
         }
-
-
-
     }
 }
+
